@@ -1,9 +1,10 @@
 Package: yri1kgv
 Title: expression + genotype on 79 unrelated YRI individuals
-Version: 0.5.0
+Version: 0.5.1
 Author: VJ Carey <stvjc@channing.harvard.edu>
 Description: expression + genotype on 79 unrelated YRI individuals
 Depends: GGBase
+Imports: Biobase
 Maintainer: VJ Carey <stvjc@channing.harvard.edu>
 License: Artistic-2.0
 LazyLoad: yes
