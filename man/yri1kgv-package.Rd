@@ -31,9 +31,9 @@ VJ Carey <stvjc@channing.harvard.edu>
 Maintainer: VJ Carey <stvjc@channing.harvard.edu>
 %~~ The author and/or maintainer of the package ~~
 }
-\references{
+%\references{
 %~~ Literature or other references for background information ~~
-}
+%}
 %~~ Optionally other standard keywords, one per line, from file KEYWORDS in ~~
 %~~ the R documentation directory ~~
 \keyword{ package }
@@ -42,5 +42,4 @@ Maintainer: VJ Carey <stvjc@channing.harvard.edu>
 %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
 }
