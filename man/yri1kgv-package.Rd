@@ -1,10 +1,10 @@
 \name{yri1kgv-package}
 \alias{yri1kgv-package}
 \alias{yri1kgv}
+\alias{ex}
 \docType{package}
 \title{
 expression + genotype on 79 unrelated YRI individuals
-~~ package title ~~
 }
 \description{
 expression + genotype on 79 unrelated YRI individuals
@@ -22,6 +22,7 @@ Depends: \tab GGBase\cr
 License: \tab Artistic-2.0 \cr
 LazyLoad: \tab yes\cr
 }
+'ex' is stored in data/eset.rda as the full ExpressionSet
 %~~ An overview of how to use the package, including the most important ~~
 %~~ functions ~~
 }
