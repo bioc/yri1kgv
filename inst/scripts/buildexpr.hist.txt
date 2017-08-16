@@ -1,0 +1,50 @@
+dir()
+yr = read.table(dir())
+yr = read.table(dir())
+yr = read.table(dir(), h=TRUE)
+yr = read.table(dir(), skip=2)
+dim(yr)
+yr[1:4,1:5]
+yr[1:4,105:109]
+x = readLines(dir(), n=1)
+xx = strsplit(x, "\t")
+length(xx)
+length(xx[[1]])
+colnames(yr) = xx[[1]]
+yr[1:4,105:109]
+yr[1:4,1:5]
+library(lumiHumanAll.db)
+library(lumiHumanIDMapping)
+objects(2)
+con = lumiHumanIDMapping_dbconn()
+con
+dbListTables(con)
+dbGetQuery(con, "select * from HumanWG6_V2_0_R2_11223189_A limit 3")
+yr[1:4,1:5]
+pid = as.character(yr[,1])
+table(nchar(pid))
+wg6pid = dbGetQuery(con, "select * from HumanWG6_V2_0_R2_11223189_A")
+wg6pid[1:2,]
+sapply(wg6pid,class)
+n6 = wg6pid$nuID
+names(n6) = wg6pid$Probe_Id
+n6[1:6]
+yrpid = as.character(yr[,1])
+feat = n6[yrpid]
+feat[1:10]
+get("BvIpQQ9yzp__kCLnEU", lumiHumanAllSYMBOL)
+wg6pid[1:6,]
+get("NH1MoTHk7CULTog3nk", lumiHumanAllSYMBOL)
+wg6pid = dbGetQuery(con, "select * from HumanWG6_V2_0_R2_11223189_A where nuID = 'NH1MoTHk7CULTog3nk'")")
+)
+)
+wg6pid = dbGetQuery(con, "select * from HumanWG6_V2_0_R2_11223189_A where nuID = 'NH1MoTHk7CULTog3nk'")
+wg6pid
+get("NH1MoTHk7CULTog3nk", lumiHumanAllSYMBOL)
+length(feat)
+feat[1:10]
+yriexpr = data.matrix(yr[,-1])
+yriexpr[1:5,1:5]
+rownames(yriexpr) = as.character(feat)
+yriexpr[1:5,1:5]
+savehistory(file="buildexpr.hist.txt")
